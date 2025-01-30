@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Two Numbers</title>
+</head>
+<body>
+  <label for="numA">Enter Value for a:</label>
+  <input type="number" id="numA" ><br>
+  
+  <label for="numB">Enter Value for b:</label>
+  <input type="number" id="numB" ><br>
+  
+  <button onclick="calculateTotal()">Get Total</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateTotal() {
+      let numA = parseFloat(document.getElementById("numA").value);
+      let numB = parseFloat(document.getElementById("numB").value);
+      let total = numA + numB;
+      document.getElementById("result").textContent = "Total a + b = " + total;
+    }
+  </script>
+</body>
+</html>
