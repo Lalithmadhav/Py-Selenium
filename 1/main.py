@@ -25,5 +25,5 @@ WebDriverWait(driver, 30).until( # Check if the class name : progress-label  giv
     )
 )
 
-input("Press Enter to exit...")
-driver.quit()
+input("Press Enter to exit...") # Continue the remaining code after pressing Enter (Waits)
+driver.quit() # Quit/Exits the driver
